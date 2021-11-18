@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-julyvbelio.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon10.png" type="image/x-icon">
+    <title>Control del DOM</title>
+</head>
+    <nav class="navbar navbar-Light  bg-dark text-light" >
+        <div class="container-fluid">
+          <span class="navbar-brand mb-1 h1"><h2> Box-Shadow CSS Generator </h2></span>
+        </div>
+      </nav>
+    <body>
+        <section class="general">
+            <section class="section">
+                <div class="top-container">   
+             <div class="diseño">
+                        <label for="customRange1" class="form-label">Shift right</label>
+                        <button class="btn btn-primary" id="buttonright">0</button>
+                        <input type="range" class="form-range" id="sliderX" min="-50" max="50" value="0">
+                <div>
+                    <span id="resultadoX">0</span>
+                </div>
+            </div>
+                 <div class="diseño">
+                        <label for="customRange1" class="form-label">Shift down</label>
+                        <button class="btn btn-primary" id="buttondown">0</button>
+                        <input type="range" class="form-range" id="sliderY" min="-50" max="50" value="0">
+                <div>
+                    <span id="resultadoY">0</span>
+                </div>
+            </div>
+                    <div class="diseño">
+                        <label for="customRange1" class="form-label">Blur:</label>
+                        <button class="btn btn-primary" id="buttonblur">0</button>
+                        <input type="range" class="form-range" id="blur" min="-50" max="50" value="0">
+                        <div>
+                            <span id="resultadoBlur">0</span>
+                        </div>
+                    </div>
+                    <div class="diseño">
+                        <label for="customRange1" class="form-label">Spread:</label>
+                        <button class="btn btn-primary" id="buttonspread">0</button>
+                        <input type="range" class="form-range" id="spread" min="-50" max="50" value="0">
+                        <div>
+                            <span id="resultadoSpread">0</span>
+                        </div>
+                    </div>
+                    <div class="diseño">
+                        <label for="customRange1" class="form-label">Opacity:</label>
+                        <button class="btn btn-primary" id="buttonopacity">1</button>
+                        <input type="range" class="form-range" id="opacity" min="-50" max="50" value="0">
+                        <div>
+                            <span id="resultadoOpacity">0</span>
+                        </div>
+                    </div>    
+                    <div id="diseño">
+                        <div>
+                            <label for="inset">Inset:</label>
+                            <input type="checkbox" id="inset">
+                        </div>
+                        
+                        <div>
+                            <input type="color" id="color" value="#000000">
+                            <span id="resultadoColor">#000000</span> 
+                        </div>
+                    </div>
+                </div>
+                    <div class="Container1 clearfix">
+                        <div id="container3" class="containerCornerButton" >
+                           <span>Add new</span> <span>+</span>
+                        </div>
+                </div>
+                </div>
+                <div class="button-con">
+                    <textarea id="textArea" onclick="this.select();" rows="4" cols="50"></textarea> 
+                </div>
+            </section>
+            <section class="section2">
+                <div class="example">
+                <textarea id="preview" onclick="this.select();" rows="4" cols="50">Preview</textarea> 
+                </div>
+                <h5>Effect Gallery</h5>
+                <div class="effect-gallery">
+                    <div>
+                        <span class="hover">Hover</span>
+                    </div>
+                    <div>
+                        <span class="sides">Sides</span>
+                    </div>
+                    <div>
+                        <span class="button">Button</span>
+                    </div>
+                    <div>
+                        <span class="mirrors">Mirrors</span>
+                    </div>
+                    <div>
+                        <span class="inout">In&Out</span>
+                    </div>
+                    <div>
+                        <span class="gradient">Gradient</span>
+                    </div>
+                    <div>
+                        <span class="pile">Pile</span>
+                    </div>
+                    <div>
+                        <span class="checker">Checker</span>
+                    </div>
+                    <div>
+                        <span class="borders">Borders</span>
+                    </div>
+                    <div>
+                        <span class="rainbow">Rainbow</span>
+                    </div>
+                    <div>
+                        <span class="candy">Candy</span>
+                    </div>
+                    <div>
+                        <span class="flames">Flames</span>
+                    </div>
+                    <div>
+                        <span class="candle">Candle</span>
+                    </div>
+                    <div>
+                        <span class="well">Well</span>
+                    </div>
+                    <div>
+                        <span class="pyramid">Pyramid</span>
+                    </div>
+                    <div>
+                        <span class="target">Target</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script src="dist/clipboard.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
